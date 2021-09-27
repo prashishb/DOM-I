@@ -50,8 +50,6 @@ navLinks[3].textContent = siteContent['nav']['nav-item-4'];
 navLinks[4].textContent = siteContent['nav']['nav-item-5'];
 navLinks[5].textContent = siteContent['nav']['nav-item-6'];
 
-// adding 2 nav links
-
 // cta
 let ctaImg = document.querySelector('#cta-img');
 ctaImg.setAttribute('src', siteContent['cta']['img-src']);

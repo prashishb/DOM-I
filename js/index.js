@@ -73,3 +73,7 @@ paragraphs[1].textContent = siteContent['main-content']['about-content'];
 paragraphs[2].textContent = siteContent['main-content']['services-content'];
 paragraphs[3].textContent = siteContent['main-content']['product-content'];
 paragraphs[4].textContent = siteContent['main-content']['vision-content'];
+
+// main content img
+const middleImg = document.querySelector('.middle-img');
+middleImg.src = siteContent['main-content']['middle-img-src'];

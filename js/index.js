@@ -59,7 +59,7 @@ const btn = document.querySelector('button');
 btn.textContent = siteContent['cta']['button'];
 
 // main content headlines
-const headlines = document.querySelectorAll('h4');
+const headlines = document.querySelectorAll('.main-content h4');
 headlines[0].textContent = siteContent['main-content']['features-h4'];
 headlines[1].textContent = siteContent['main-content']['about-h4'];
 headlines[2].textContent = siteContent['main-content']['services-h4'];
@@ -77,3 +77,10 @@ paragraphs[4].textContent = siteContent['main-content']['vision-content'];
 // main content img
 const middleImg = document.querySelector('.middle-img');
 middleImg.src = siteContent['main-content']['middle-img-src'];
+
+// contact
+document.querySelector('.contact h4').textContent = siteContent['contact']['contact-h4'];
+const contactParagraphs = document.querySelectorAll('.contact p');
+contactParagraphs[0].innerHTML = siteContent['contact']['address'].split('Street').join('Street<br>');
+contactParagraphs[1].textContent = siteContent['contact']['phone'];
+contactParagraphs[2].textContent = siteContent['contact']['email'];

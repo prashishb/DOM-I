@@ -51,15 +51,15 @@ navLinks[4].textContent = siteContent['nav']['nav-item-5'];
 navLinks[5].textContent = siteContent['nav']['nav-item-6'];
 
 // cta
-const ctaImg = document.querySelector('#cta-img');
+let ctaImg = document.querySelector('#cta-img');
 ctaImg.setAttribute('src', siteContent['cta']['img-src']);
-const ctaHeadline = document.querySelector('h1');
+let ctaHeadline = document.querySelector('h1');
 ctaHeadline.innerHTML = siteContent['cta']['h1'].split(' ').join('<br>');
-const btn = document.querySelector('button');
+let btn = document.querySelector('button');
 btn.textContent = siteContent['cta']['button'];
 
 // main content headlines
-const headlines = document.querySelectorAll('.main-content h4');
+let headlines = document.querySelectorAll('.main-content h4');
 headlines[0].textContent = siteContent['main-content']['features-h4'];
 headlines[1].textContent = siteContent['main-content']['about-h4'];
 headlines[2].textContent = siteContent['main-content']['services-h4'];
@@ -67,7 +67,7 @@ headlines[3].textContent = siteContent['main-content']['product-h4'];
 headlines[4].textContent = siteContent['main-content']['vision-h4'];
 
 // main content paragraphs
-const paragraphs = document.querySelectorAll('p');
+let paragraphs = document.querySelectorAll('p');
 paragraphs[0].textContent = siteContent['main-content']['features-content'];
 paragraphs[1].textContent = siteContent['main-content']['about-content'];
 paragraphs[2].textContent = siteContent['main-content']['services-content'];
@@ -75,16 +75,16 @@ paragraphs[3].textContent = siteContent['main-content']['product-content'];
 paragraphs[4].textContent = siteContent['main-content']['vision-content'];
 
 // main content img
-const middleImg = document.querySelector('.middle-img');
+let middleImg = document.querySelector('.middle-img');
 middleImg.src = siteContent['main-content']['middle-img-src'];
 
 // contact
 document.querySelector('.contact h4').textContent = siteContent['contact']['contact-h4'];
-const contactParagraphs = document.querySelectorAll('.contact p');
+let contactParagraphs = document.querySelectorAll('.contact p');
 contactParagraphs[0].innerHTML = siteContent['contact']['address'].split('Street').join('Street<br>');
 contactParagraphs[1].textContent = siteContent['contact']['phone'];
 contactParagraphs[2].textContent = siteContent['contact']['email'];
 
 // Footer
-const footer = document.querySelector('footer p');
+let footer = document.querySelector('footer p');
 footer.textContent = siteContent['footer']['copyright'];

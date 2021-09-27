@@ -84,3 +84,7 @@ const contactParagraphs = document.querySelectorAll('.contact p');
 contactParagraphs[0].innerHTML = siteContent['contact']['address'].split('Street').join('Street<br>');
 contactParagraphs[1].textContent = siteContent['contact']['phone'];
 contactParagraphs[2].textContent = siteContent['contact']['email'];
+
+// Footer
+const footer = document.querySelector('footer p');
+footer.textContent = siteContent['footer']['copyright'];

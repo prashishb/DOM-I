@@ -50,6 +50,8 @@ navLinks[3].textContent = siteContent['nav']['nav-item-4'];
 navLinks[4].textContent = siteContent['nav']['nav-item-5'];
 navLinks[5].textContent = siteContent['nav']['nav-item-6'];
 
+// adding 2 nav links
+
 // cta
 let ctaImg = document.querySelector('#cta-img');
 ctaImg.setAttribute('src', siteContent['cta']['img-src']);
@@ -75,7 +77,7 @@ paragraphs[3].textContent = siteContent['main-content']['product-content'];
 paragraphs[4].textContent = siteContent['main-content']['vision-content'];
 
 // main content img
-let middleImg = document.querySelector('.middle-img');
+let middleImg = document.querySelector('#middle-img');
 middleImg.src = siteContent['main-content']['middle-img-src'];
 
 // contact
@@ -88,3 +90,19 @@ contactParagraphs[2].textContent = siteContent['contact']['email'];
 // Footer
 let footer = document.querySelector('footer p');
 footer.textContent = siteContent['footer']['copyright'];
+
+// New Content
+navLinks.forEach(item => item.style.color = 'green'); // make nav text green
+
+const homeLink = document.createElement('a');
+homeLink.textContent = 'Home';
+homeLink.href = '#';
+document.querySelector('nav').prepend(homeLink);
+
+const blogLink = document.createElement('a');
+blogLink.textContent = 'Blog';
+blogLink.href = '#';
+document.querySelector('nav').appendChild(blogLink);
+
+homeLink.style.color = 'green';
+blogLink.style.color = 'green';
